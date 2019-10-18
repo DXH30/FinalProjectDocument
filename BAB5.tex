@@ -1,0 +1,15 @@
+\documentclass[./skripsi.tex]{subfiles}
+\begin{document}
+\chapter{Penutup}
+\section{Kesimpulan}
+\begin{enumerate}
+    \item Memanfaatkan Deep Learning pada Sistem Pendeteksi Intrusi Snort dilakukan menggunakan Keras melalui \textit{Flask} microframework
+    \item Penerapan \textit{Convolutional Neural Network} dapat mendeteksi flow paket virus dengan baik. Virus yang dapat terdeteksi harus memiliki fitur yang mirip antara satu dengan yang lain
+    \item Penerapan \textit{Long Short Term Memory} pada flow header paket dapat melakukan profiling jaringan dengan baik. Parameter yang diukur untuk menentukan terjadinya flow header anomali dan normal adalah persentase loss dari model LSTM
+\end{enumerate}
+\section{Saran}
+\begin{enumerate}
+    \item Agar integrasi Sistem Pendeteksi Intrusi Snort dan Keras framework dapat dioptimasi sehingga pendeteksian dapat terjadi dengan cepat atau mendekati realtime. Penelitian sebaiknya dilakukan dengan hardware yang memiliki prosesor yang kuat.
+    \item Agar mekanisme Sistem Pendeteksi Intrusi dapat diterapkan secara portabel, perlu adanya sistem yang dapat mengkonversi dari satu model dengan backend lain selain keras
+\end{enumerate}
+\end{document}

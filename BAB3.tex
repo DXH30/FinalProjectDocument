@@ -1,0 +1,106 @@
+\documentclass[./skripsi.tex]{subfiles}
+\begin{document}
+\chapter{Metode Penelitian}
+\section{Metode Penelitian}
+\par Metode penelitian yang digunakan pada penelitian ini adalah metode penelitian kuantitatif deskriptif. Berikut adalah gambaran penelitian yang diusulkan.
+\begin{figure}[H]
+    \centering
+    \buatsubgrafik{public/assets/img/fishbonepenelitian.png}{}{.5}
+    \caption{Metode Penelitian}
+    \label{fig:fishbonepenelitian}
+\end{figure}
+\par Berdasarkan grafik metode penelitian \ref{fig:fishbonepenelitian} diatas, dapat dijabarkan beberapa komponen pada proses penelitian sehingga menghasilkan sebuah produk sistem yang diinginkan.
+\par Pada bagian \textit{measurement} menjelaskan apa saja yang dijadikan ukuran yang akan dianalisis pada penelitian ini. Parameter yang dijadikan ukuran yang akan dianalisis adalah akurasi dan loss training dan testing.
+\par Pada sistem profiling diinputkan parameter \textit{packet header} yang dijadikan input pada LSTM. Hasil dari sistem profiling ini adalah bagaimana bentuk trafik jaringan yang akan dipelajari dan dianggap normal.
+\par Pada sistem \textit{filtering} yang dijadikan input adalah payload data, dan akan diukur hasil akurasi training dan testing pada data normal dan malicious.
+\par Pada snortIDS akan dikukur Delay Deteksi yang terjadi, dan \textit{false prediction} dalam bentuk \textit{false positive} dan \textit{false negative}.
+\par Pada bagian \textit{material} berisi beberapa dataset yang digunakan. Dataset yang digunakan adalah file executable windows dari botne rbot, neris, dan svchosta. Dan beberapa file tambahan seperti executable dari file exe biasa, dan virus reverse meterpreter yang digunakan untuk dijadikan tambahan pada saat testing.
+\par Pada bagian \textit{environment} berisi tentang parameter kerja yang akan diubah pada sistem. Parameter ini adalah dengan menambah model pada sistem profiling yang berbeda-beda. Pada snort IDS parameter yang diubah adalah mekanisme alert pada \textit{preprocessor} nya. Dan pada proses \textit{filtering} dengan mengganti-ganti struktur model baik urutan maupun ukuran filter.
+\par Pada bagian instrumen berisi tentang apa saja instrumen yang digunakan untuk memperoleh hasil penelitian. Instrumen ini antara lain \textit{scapy}, \textit{flask}, \textit{keras framework}, \textit{tensorflow}, \textit{jupyterlab}, \textit{snortIDS}. Scapy adalah \textit{library} snort yang digunakan untuk mengekstraksi data dari trafik jaringan. Flask adalah \textit{microframework} yang digunakan untuk melakukan binding model Jaringan Syaraf Tiruan. Keras sebagai framework standar dari \textit{tensorflow} digunakan untuk merancang model CNN dan LSTM.
+\par Pada bagian metode berisi metode penelitian yang digunakan. Analisis sistem dilakukan untuk menjabarkan bagaiman sistem yang digunakan pada sistem \textit{filtering} dan \textit{profiling}. Analisis jaringan syaraf tiruan merupakan langkah yang dilakukan untuk menjabarkan bagaimana bentuk model jaringan syaraf tiruan yang cocok digunakan pada dataset penelitian ini. Fungsi loss, aktivasi dan optimizer merupakan parameter yang diterapkan pada model jaringan syaraf tiruan. \textit{Realtime detection} adalah metode yang digunakan untuk memperoleh delay sistem dan \textit{detection rate} pada snortIDS.
+\section{Waktu dan Tempat Pelaksanaan}
+\par Waktu dan tempat pelaksanaan penelitian ini adalah sebagai berikut :
+\subsection{Waktu Pelaksanaan}
+%Disini mulai%
+
+%Disini selesai%
+\par Waktu pelaksanaan penelitian dilakukan dari tanggal 1 Maret 2019 sampai dengan 31 Juli 2019.
+\subsection{Tempat Pelaksanaan}
+\par Pelaksanaan penelitian dilakukan di Laboratorium 3 UPT Pusat Teknologi Informasi dan Komunikasi Universitas Mataram
+\section{Populasi dan Sampel}
+\par Populasi dan sampel penelitian ini adalah sebagai berikut :
+\subsection{Populasi Penelitian}
+\par Populasi pada penelitian ini mencakup intrusi dalam bentuk Executable-based Virus dan Payload-based Virus
+\subsection{Sampel Penelitian}
+\par Sampel pada penelitian ini antara lain :
+\begin{enumerate}
+    \item Neris Botnet executable untuk CNN\\
+    Merupakan salah satu botnet yang diperoleh dari CTU-42 dataset. Botnet ini mengirimkan data post request pada sistem C\&C channel. Payload dan executable dari botnet ini akan dijadikan sampel pada sistem \textit{filtering}
+    \item Neris Botnet Traffic Data pcap untuk LSTM\\
+    Berkas pcap atau \textit{packet capture} dari botnet ini dianalisis pada sistem \textit{profiling}.
+    \item RBot Botnet executable untuk CNN
+    Merupakan salah satu botnet yang diperoleh dari CTU-92 dataset. Botnet ini merupakan botnet lama yang menyerang sistem IRC dengan melakukan DDOS dan Spam. Payload dan executable dari botnet ini dijadikan sampel pada sistem \textit{filtering}
+    \item RBot Botnet Traffic Data pcap untuk LSTM
+    Berkas pcap atau \textit{packet capture} dari botnet ini dianalisis pada sistem \textit{profiling}.
+    \item Svchosta Botnet executable untuk CNN\\
+    Merupakan salah satu botnet yang diperoleh dari CtU-47 dataset. Botnet ini merupakan botnet yang menyerang menginfeksi file svchosta pada windows dan menyebabkan email spam, nama asli botnet ini adalah \textit{DonBot} botnet. Payload dan executable dari botnet ini akan dijadikan sampel pada sistem \textit{filtering}
+    \item Svchosta Botnet Traffic Data pcap untuk LSTM
+    Berkas pcap atau \textit{packet capture} dari botnet ini dianalisis pada sistem \textit{profiling}.
+    \item Payload Reverse Meterpreter dalam file PE32
+    \par Beberapa file executable malicious yang diselipkan dengan sengaja menggunakan \textit{metasploit framework}. Payload dan pcap dari file ini akan dijadikan bahan untuk melakukan testing pada sistem \textit{filtering} dan \textit{profiling}.
+    \item File executable normal untuk CNN
+    \par Beberapa file executable normal seperti firefox dan executable dari game lama windows. Payload dan pcap dari file ini akan dijadikan bahan untuk melakukan testing pada sistem \textit{filtering} dan \textit{profiling}.
+\end{enumerate}
+\section{Instrumen Penelitian}
+Instrumen penelitian yang digunakan antara lain :
+\begin{enumerate}
+    \item SnortIDS sebagai Intrusion Detection System
+    \item Python sebagai bahasa pemrograman yang digunakan untuk pemodelan LSTM dan CNN
+    \item Library python seperti : tensorflow, keras, numpy, matplotlib untuk perlengkapan pada saat training data dan testing data dengan Convolutional Neural Network dan Long Short Term Memory.
+    \item Python flask sebagai library untuk webservice filter dan profiler
+    \item PC Server Linux sebagai host yang menjalankan SnortIDS, dan Python
+\end{enumerate}
+\subsection{Proses Pengembangan Instrumen}
+\par Proses pengembangan instrumen berawal dari perancangan instrumen, uji validitas instrumen, Uji reliabilitas instrumen.
+\subsection{Uji Validitas Instrumen}
+\par Proses pengujian validitas instrumen dilakukan dengan menguji IDS dengan data input yang sama, lalu mengamati hasilnya yang kemudian akan disesuaikan.
+\subsubsection{Hasil Uji Validitas Instrumen}
+\par Isinya tabel training data di Jupyterlab
+\subsection{Uji Reliabilitas Instrumen}
+\par Proses pengujian reliabilitas instrumen dilakukan dengan menguji IDS dengan data input yang bervariasi
+\section{Prosedur Penelitian}
+\par Prosedur penelitian terdiri dari perancangan sistem training dan perancangan sistem filter untuk testing. Rancangan sistem training dibuat dengan menggunakan jupyter notebook. Sedangkan rancangan sistem filter menggunakan snortIDS dan flask framework untuk menghubungkan keluaran data dari snortIDS ke dalam model CNN dan LSTM.
+\subsection{Perancangan Sistem}
+\par Rancangan sistem filter terdiri dari Dataset yang dijadikan data untuk proses testing. Pada sisi filter juga terdapat IP\_buffer yang digunakan sebagai input yang akan mengumpulkan packet yang bersumber dari alamat IP yang sama.
+\par Alamat IP yang berbeda-beda atau berubah-ubah dapat diketahui dari kemiripan transmisi header antara satu packet dengan packet lain. Jika kemiripan nya tinggi maka akan dianggap alamat IP diubah-ubah atau terindikasi Denial of Service.
+
+\begin{figure}[H]
+    \centering
+    \buatsubgrafik{public/assets/img/RancanganSistemPenelitian.png}{}{.8}
+    \caption{Model Rancangan Sistem}
+    \label{fig:rancanganpenelitian}
+\end{figure}
+
+\par Berdasarkan gambar \ref{fig:rancanganpenelitian} diatas, dapat dijabarkan rancangan sistem yang akan dibuat untuk \textit{preprocessor} terdiri dari sistem \textit{profiling} dengan metode LSTM dan sistem \textit{filtering} dengan metode CNN.
+
+\begin{figure}[H]
+    \centering
+    \buatsubgrafik{public/assets/img/sistemtransaksicnnlstm.png}{}{0.9}
+    \caption{Proses kerja sistem}
+    \label{fig:proseskerjasistem}
+\end{figure}
+
+\par Berdasarkan gambar \ref{fig:proseskerjasistem} diatas, dapat dijabarkan proses kerja sistem yang akan dirancang. Rancangan sistem untuk mendapatkan hasil diperoleh dari IDS sebagai sistem pendeteksi intrusi, CNN sebagai sistem \textit{filtering}, dan LSTM sebagai sistem \textit{filtering}
+\section{Analisis Data}
+\par Proses analisis data meliputi analisis tabel dan analisis grafis dari seluruh hasil pengujian validitas dan reliabilitas instrumen
+\subsection{Prosedur Pengolahan Data}
+\par Sebelum data dimasukkan, data yang masih mentah diubah menjadi data angka. Pada sistem \textit{profiling}, data angka yang dijadikan input adalah data header yang berisi \textit{IP Address}, \textit{Port} baik sumber maupun tujuan dan beberapa parameter header lainnya. Pada sistem \textit{filtering}, data angka yang dijadikan input diperoleh dari data 1448 byte per frame packet yang diperoleh dari \textit{packet payload}.
+\par Setelah diperoleh data angka pada sistem \textit{profiling} di inputkan data angka header, lalu proses \textit{training} dilakukan untuk memperoleh hasil regresi dari trafik jaringan. Sedangkan pada sistem \textit{filtering} di inputkan data payload yang kemudian akan di lakukan training untuk mengklasifikasi data yang dimasukkan aman atau intrusi. Data hasil training dan testing dari proses ini akan dianalisis untuk menentukan model yang akan digunakan pada sistem pendeteksi intrusi SnortIDS.
+\par Setelah diperoleh model yang sesuai diperoleh. Model yang sudah jadi dibinding oleh \textit{flask} dan dapat diakses dengan HTTP Request. Data hasil keluaran snortIDS akan dikirim ke \textit{flask} ini untuk dilakukan analisis dan diperoleh hasil prediksinya. Dari proses ini diperoleh delay sistem dan \textit{detection rate} dari kinerja snortIDS.
+\subsection{Teknik Analisis Data}
+\par Analisis data dilakukan berdasarkan dua jenis data yang diperoleh yakni Sistem \textit{Profiling} oleh LSTM, dan Sisitem \textit{Filtering} oleh CNN. Sistem Profiling LSTM menggunakan tiga metode yakni \textit{Sentiment Analysis}, \textit{Multivariate Prediction}, dan \textit{4 Directional Header Prediction}. Ketiga metode ini kemudian masing-masing parameternya akan di analisis agar memperoleh Sistem \textit{Profiling} yang optimal. Sistem Filtering CNN dianalisis dengan mengubah parameter \textit{learning rate}-nya. Dimana \textit{learning rate} yang dipakai adalah 0.1, 0.01, 0.001, dan 0.0001. Hal ini dilakukan untuk mempertimbangkan learning rate yang optimal yang akan digunakan untuk melakukan training model filter.
+
+\subsection{Membuat klasifikasi data}
+\par Data kelas terbagi menjadi 2 yakni \textit{Malicious} dan \textit{Benign}. Untuk membedakan kedua kelas ini dilakukan training pada data \textit{malicious} dengan dua kelas.
+\par Pada sistem filtering klasifikasi terjadi berdasarkan sifat dari payload dari \textit{packet}, sedangkan pada sistem profiling klasifikasi terjadi secara tidak langsung, dengan memperhitungkan anomali trafik jaringan dengan regresi.
+\end{document}

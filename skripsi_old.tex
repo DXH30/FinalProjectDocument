@@ -1,0 +1,153 @@
+\documentclass[12pt,indonesia,oneside]{book}
+\usepackage{titlesec}
+\usepackage{subfiles}
+\usepackage{multicol}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup{compatibility=false}
+\usepackage{graphicx}
+\usepackage{tikz-uml}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+% Atur marginnya dong
+\usepackage[a4paper,left=4cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{natbib}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{blindtext}
+\usepackage{chngcntr}
+\usepackage{float}
+\usepackage{multirow,tabularx}
+%\renewcommand{\arraystretch}{2}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{numprint}
+\usepackage{fancyhdr}
+\npdecimalsign{.}
+\nprounddigits{3}
+\usepackage{public/packages/tocloft} % buat ngedit daftar gambar dan tabel
+
+\renewcommand\cftfigpresnum{Gambar\ }
+\renewcommand\cfttabpresnum{Tabel\ }
+\newlength{\mylenf}
+\settowidth{\mylenf}{\cftfigpresnum}
+\setlength{\cftfignumwidth}{\dimexpr\mylenf+2.5em}
+\setlength{\cfttabnumwidth}{\dimexpr\mylenf+2.5em}
+\addto\captionsenglish{\renewcommand\listfigurename{Daftar Gambar}}
+\addto\captionsenglish{\renewcommand\listtablename{Daftar Tabel}}
+% Menyesuaikan format Fakultas
+\addto\captionsenglish{\def\contentsname{DAFTAR ISI}}
+\addto\captionsenglish{\def\bibname{DAFTAR PUSTAKA}}
+\author{
+Didik Hadumi Setiaji
+\texttt{F1B014020}
+}
+\title{
+Design of Intelligent Intrusion Detection System for Virus Pattern Recognition with Long-Short-Term Memory and Convolutional Neural Network in Snort
+}
+\date{February 2019}
+
+\renewcommand{\chaptertitlename}{BAB}
+\addto\captionsenglish{\renewcommand{\figurename}{Gambar}}
+\titleformat{\chapter}[display]
+   {\normalfont\large\bfseries\centering}{\centering\chaptertitlename\ \thechapter}{12pt}{\Large}
+\titlespacing*{\chapter}
+   {0pt}{0pt}{40pt}
+
+\bibliographystyle{agsm}
+\setlength{\headsep}{0.2in}
+\usepackage{setspace}
+\onehalfspacing
+
+% Definisikan command untuk grafik satu
+% \buatgrafik{path}{nama}{ukuran}{label}
+\newcommand{\buatgrafik}[3]{
+\begin{figure}{H}
+\centering
+\includegraphics[width=#3\textwidth]{#1}
+{#2}\label{figure}
+\end{figure}
+\caption{figure}
+}
+
+% Definisikan command untuk grafik dua
+% \buatduagrafik{path1}{path2}{Nama 1}{Nama 2}{NamaFig}{label}
+\newcommand{\buatduagrafik}[5] {
+\begin{figure}[H]
+\centering
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{#1}
+  \caption{#3}
+\end{subfigure}
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{#2}
+  \caption{#4}
+\end{subfigure}
+\caption{#5}
+\label{figure}
+\end{figure}
+}
+
+% Definisikan command untuk grafik 5
+% \buatlimagrafik
+% {path1}{Nama1}
+% {path2}{Nama2}
+% {path3}{Nama3}
+% {path4}{Nama4}
+% {path5}{Nama5}
+% {NamaFig}
+
+\newcommand{\buatsubgrafik}[3] {
+\begin{subfigure}{#3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{#1}
+\cpation{#2}\label{fig:sub1}
+\end{subfigure}
+}
+
+% Mengatur agar section dibaca sampai subsubsub atau
+% Menjadi bentukan 1.2.1.1
+\setcounter{secnumdepth}{5}
+% Pakai font times new roman
+\usepackage{newtxtext,newtxmath}
+% Ubah format header section dll disamakan ukurannya dengan text
+\titleformat*{\section}{\LARGE\bfseries}
+\titleformat*{\subsection}{\Large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+
+% Agar daftar isi dan daftar lainnya bisa di klik
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+% Agar paragraf pertama di Indent
+\usepackage{indentfirst}
+\begin{document}
+\subfile{skripsi/cover.tex}
+\frontmatter
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+\pagestyle{empty}
+\subfile{skripsi/PENGESAHAN.tex}
+\singlespacing
+\mainmatter
+\subfile{skripsi/BAB1.tex}
+\subfile{skripsi/BAB2.tex}
+\subfile{skripsi/BAB3.tex}
+\subfile{skripsi/BAB4.tex}
+\subfile{skripsi/BAB5.tex}
+\newpage
+\bibliography{skripsi}
+\end{document}

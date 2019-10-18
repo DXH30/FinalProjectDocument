@@ -1,0 +1,69 @@
+\documentclass[red]{skripsi}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{blindtext}
+% Mendefinisikan untuk environment tabel hasil keluaran keras
+\sisetup{   
+        round-mode = places,
+        round-precision = 3,
+        table-column-width=1.2cm,
+        table-format=>1.2
+        }
+\newcolumntype{P}{>{\global\let\currentprecision\relax}}
+\newcolumntype{^}{>{\ifthenelse{\isequivalentto{\currentprecision}{\relax}}{}{\currentprecision}}}
+\newcommand{\rowprecision}[1]{\gdef\currentprecision{\sisetup{round-precision=#1}}}
+
+% Karena lebar \textwidth atau lebar halaman yang diperbolehkan lebih kecil dari 14cm
+% maka akan dimunculkan warning.
+\newenvironment{tabelkeras}
+    {\renewcommand\arraystretch{0.5}
+        \tabularx{14cm}{|Pl*{8}{|S}|}
+            \hline
+            \multicolumn{1}{|l|}{e} & 
+            \multicolumn{1}{c|}{VL} &
+            \multicolumn{1}{c|}{VA} & 
+            \multicolumn{1}{c|}{VMAE} &
+            \multicolumn{1}{c|}{VCA} &
+            \multicolumn{1}{c|}{L} &
+            \multicolumn{1}{c|}{A} &
+            \multicolumn{1}{c|}{MAE} &
+            \multicolumn{1}{c|}{CA}\\
+    }
+    {
+        \endtabularx
+    }
+
+\konteks{Tugas Akhir}
+\title{Perancangan Preprocessor Pada Sistem Pendeteksi Intrusi Snort Berbasis Convolutional Neural Network dan Long Short Term Memory}
+\author{Didik Hadumi Setiaji}
+\nimauthor{F1B014020}
+\bulan{Oktober}
+\tahun{2019}
+
+\begin{document}
+\buatcover
+\pagestyle{empty}
+\subfile{PENGESAHAN.tex}
+\frontmatter
+\tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+\singlespacing
+\mainmatter
+\spacing{1.5} % atur spacing menjadi ukuran 1.5
+\subfile{BAB1.tex}
+\spacing{1.5} % atur spacing menjadi ukuran 1.5
+\subfile{BAB2.tex}
+\spacing{1.5} % atur spacing menjadi ukuran 1.5
+\subfile{BAB3.tex}
+\spacing{1.5} % atur spacing menjadi ukuran 1.5
+\subfile{BAB4.tex}
+\spacing{1.5} % atur spacing menjadi ukuran 1.5
+\subfile{BAB5.tex}
+\newpage
+\bibliography{skripsi}
+\end{document}

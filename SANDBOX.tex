@@ -1,0 +1,51 @@
+\documentclass{book}
+% package yang dibutuhkan agar bisa copas persamaan dari wikipedia
+\usepackage{amsmath}
+\usepackage{sectsty}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{numprint}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\sisetup{   
+        round-mode = places,
+        round-precision = 3,
+        table-column-width=0.1\textwidth,
+        table-format=>1.2
+        }
+\usepackage{float}
+\newcolumntype{P}{>{\global\let\currentprecision\relax}}
+\newcolumntype{^}{>{\ifthenelse{\isequivalentto{\currentprecision}{\relax}}{}{\currentprecision}}}
+\newcommand{\rowprecision}[1]{\gdef\currentprecision{\sisetup{round-precision=#1}}}
+
+\sectionfont{\fontsize{12}{15}\selectfont}
+\newenvironment{tabelkeras}
+    {\tabularx{14cm}{
+        |Pl*{8}{|S}|
+        }
+        \hline
+        \multicolumn{1}{|l|}{e} & 
+        \multicolumn{1}{l|}{VL} &
+        \multicolumn{1}{l|}{VA} & 
+        \multicolumn{1}{l|}{VMAE} &
+        \multicolumn{1}{l|}{VCA} &
+        \multicolumn{1}{l|}{L} &
+        \multicolumn{1}{l|}{A} &
+        \multicolumn{1}{l|}{MAE} &
+        \multicolumn{1}{l|}{CA}\\
+        \hline
+    }
+    {
+    \hline
+    \endtabularx
+    }
+\usepackage{newtxtext,newtxmath}
+\begin{document}
+\chapter{Snort Overview}
+\section{Persamaan umum sistem kendali orde dua}
+\begin{equation}
+    \frac{C(s)}{R(s)} = \frac{\omega_{n}^{2}}{s^2+2\zeta\omega_n s+\omega_{n}^{2}}
+\end{equation}
+\end{document}
