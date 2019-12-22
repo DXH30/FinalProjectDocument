@@ -1,0 +1,42 @@
+\documentclass[skripsi.tex]{subfiles}
+\begin{document}
+\chapter{Pendahuluan}
+\section{Latar Belakang} \label{latarbelakang}
+\par Sistem keamanan jaringan bertujuan untuk memberikan keamanan pada sistem komunikasi data. Sistem keamanan jaringan ini dapat berupa sistem enkripsi data, maupun filter data pada sisi penerima. Saat terjadinya transmisi data, maka data yang sebelumnya bersifat lokal akan bersifat publik. Sehingga data publik dapat memiliki 2 sifat yakni  \textit{malicious} atau mengandung gangguan dan \textit{benign} atau normal. Kedua perbedaan data ini dapat diatasi dengan adanya Sistem Pendeteksi Intrusi atau \textit{Intrusion Detection System}, dapat disingkat IDS.
+\par
+Seiring dengan perkembangan teknologi, semakin banyaknya \textit{software} yang dikembangkan, sehingga banyak pula celah keamanan yang timbul. Oleh karena itu, dibutuhkan teknologi sistem keamanan yang dapat mengatasi permasalahan tersebut. Gangguan terhadap keamanan memiliki pola gangguan yang bervariasi. Sifat keterbukaan internet menyebabkan persebaran dan variasi gangguan menjadi sangat besar. Pada umumnya Sistem Pendeteksi Intrusi melakukan pendeteksian intrusi berdasarkan pola yang identik dengan pola yang telah dikenali sebagai gangguan. Salah satu tipe gangguan yang ada adalah \textit{virus} atau \textit{malware} yang utuh maupun yang diselipkan ke dalam aplikasi lain.
+\par Metode \textit{Deep Learning} dapat menjadi solusi bagi sistem keamanan jaringan IDS. Kelebihan dari \textit{Deep Learning} dibandingkan dengan metode kecerdasan lainnya yakni \textit{Deep Learning} dapat mendeteksi pola berdasarkan fitur yang ada pada sebuah objek baik itu gambar maupun bentuk pola lain.
+\par Berdasarkan sifat data \textit{Virus} dan \textit{Malware} yang memiliki pola yang terstruktur dan berada di dalam jaringan yang memiliki data terpotong-potong saat pengirimannya atau disebut \textit{truncated data}. Metode \textit{Deep Learning} yang akan digunakan adalah \textit{Convolutional Neural Network} atau CNN, dan \textit{Long Short Term Memory} atau LSTM. Implementasi CNN digunakan untuk mengekstraksi fitur pada sebuah data menggunakan matriks konvolusi. Sedangkan LSTM di implementasikan untuk memprediksi fitur berdasarkan waktu atau deret.
+\section{Rumusan Masalah} \label{rumusanmasalah}
+\par SnortIDS merupakan IDS yang memiliki bagian decoder dan preprocessor yang hanya dapat menganalisis paket secara eksak dengan memanipulasi pola dan mendeteksi pola tersebut. Snort belum mengimplementasikan metode \textit{Deep Learning} pada sistemnya. Pada penelitian ini dirancang sebuah preprocessor yang dapat memanfaatkan metode ini.
+\par Rumusan masalah pada penelitian ini adalah mengenai rancangan preprocessor pada snort yang dapat menggunakan metode \textit{Deep Learning} yakni CNN dan LSTM sebagai metode pendeteksian intrusinya.
+\section{Batasan Masalah} \label{batasanmasalah}
+Batasan masalah yang diterapkan pada penelitian ini adalah sebagai berikut :
+\begin{enumerate}
+    \item Sistem yang dirancang berbasis \textit{service daemon} atau berjalan di belakang
+    \item Sistem diujikan pada jaringan kabel \textit{ethernet} dengan skala jaringan LAN
+    \item Sistem diujikan dengan menonaktifkan seluruh rule yang ada pada Snort IDS
+    \item Pengujian sistem bersifat aktif atau disengaja
+    \item Pendeteksian diujikan pada file malware yang sudah di \textit{training}.
+\end{enumerate}
+\section{Tujuan}
+Berdasarkan latar belakang dan rumusan masalah, tujuan dari penelitian ini adalah sebagai berikut :
+\begin{enumerate}
+    \item Dapat meningkatkan kapabilitas sistem pendeteksi intrusi snort dengan mengintegrasikan sistem \textit{deep learning} berupa CNN dan LSTM dalam pada sistem pendeteksi intrusi malware
+    \item Menemukan arsitektur dan karakteristik model \textit{Deep Learning} yang optimal dijadikan sebagai metode pendeteksi intrusi malware
+\end{enumerate}
+\section{Manfaat}
+\begin{enumerate}
+    \item Memberikan kemudahan dalam pendeteksian intrusi \textit{malware} dengan snort IDS
+    \item Menjadi referensi untuk mengimplementasikan metode \textit{Deep Learning} pada Snort IDS. Dapat menjadi acuan dari penelitian tentang bagaimana pengaruh dan manfaat penerapan metode \textit{deep learning}
+\end{enumerate}
+\section{Sistematika Penulisan}
+Untuk mencapai tujuan yang diharapkan, maka sistematika penulisan yang disusun dalam tugas akhir ini dibagi menjadi 5 bab sebagai berikut :
+\begin{itemize}
+    \item Bab I. Pendahuluan \\ Bab ini membahas tentang latar belakang, rumusan masalah, batasan masalah, tujuan penelitian, manfaat penelitian, dan sistematika penulisan
+    \item Bab II. Tinjauan Pustaka dan Landasan Teori \\ Bab ini memuat tentang tinjauan pustaka yang menjabarkan hasil penelitian yang berkaitan dengan penelitian ini dan landasan teori yang menjabarkan teori-teori penunjang yang berhubungan dengan penelitian ini.
+    \item Bab III. Metedologi Penelitian \\ Memuat tentang metode penelitian, mulai dari pelaksanaan penelitian, diagram alir penelitian, menentukan alat dan bahan, lokasi penelitian, dan langkah-langkah penelitian.
+    \item Bab IV. Hasil Penelitian
+    \item Bab V. Penutup
+\end{itemize}
+\end{document}

@@ -1,0 +1,71 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Pendahuluan}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Latar Belakang}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Rumusan Masalah}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Batasan Masalah}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Tujuan}{2}{section.1.4}
+\contentsline {section}{\numberline {1.5}Manfaat}{3}{section.1.5}
+\contentsline {section}{\numberline {1.6}Sistematika Penulisan}{3}{section.1.6}
+\contentsline {chapter}{\numberline {2}Tinjauan Pustaka dan Landasan Teori}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Tinjauan Pustaka}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Landasan Teori}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Protocol Data Unit}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}IDS}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Snort IDS}{7}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Cara kerja Snort IDS}{7}{subsubsection.2.2.3.1}
+\contentsline {subsection}{\numberline {2.2.4}Deep Learning}{8}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Jaringan Syaraf Tiruan}{9}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Botnet}{9}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}CNN}{9}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}LSTM}{12}{subsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.8.1}Forget Gate}{13}{subsubsection.2.2.8.1}
+\contentsline {subsubsection}{\numberline {2.2.8.2}Input Gate}{14}{subsubsection.2.2.8.2}
+\contentsline {subsubsection}{\numberline {2.2.8.3}Output Gate}{16}{subsubsection.2.2.8.3}
+\contentsline {subsection}{\numberline {2.2.9}Python}{16}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.10}Flask}{17}{subsection.2.2.10}
+\contentsline {subsection}{\numberline {2.2.11}Keras}{17}{subsection.2.2.11}
+\contentsline {chapter}{\numberline {3}Metode Penelitian}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Metode Penelitian}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Waktu dan Tempat Pelaksanaan}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Waktu Pelaksanaan}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Tempat Pelaksanaan}{20}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Populasi dan Sampel}{20}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Populasi Penelitian}{20}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Sampel Penelitian}{20}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Instrumen Penelitian}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Proses Pengembangan Instrumen}{22}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Uji Validitas Instrumen}{22}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Uji Reliabilitas Instrumen}{22}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Prosedur Penelitian}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Perancangan Sistem}{22}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Analisis Data}{25}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Prosedur Pengolahan Data}{25}{subsection.3.6.1}
+\contentsline {subsubsection}{\numberline {3.6.1.1}Proses Parsing Paket Jaringan}{25}{subsubsection.3.6.1.1}
+\contentsline {subsection}{\numberline {3.6.2}Teknik Analisis Data}{31}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Membuat klasifikasi data}{31}{subsection.3.6.3}
+\contentsline {chapter}{\numberline {4}Hasil Penelitian}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Deskripsi Hasil Penelitian}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Hasil Training Data Neural Network}{34}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Model CNN}{34}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Model LSTM}{34}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Hasil Training Data LSTM}{36}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Hasil training Svchosta Botnet dengan Sentiment Analysis LSTM}{36}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Hasil Training Neris Botnet dengan Sentiment Analysis LSTM}{38}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}Hasil Training Rbot Botnet dengan Sentiment Analysis LSTM}{40}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}Hasil Training svchosta Botnet dengan Multivariate Prediction LSTM}{42}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}Hasil Training Neris Botnet dengan Multivariate Prediction LSTM}{50}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}Hasil Training Rbot Botnet dengan Multivariate Prediction LSTM}{56}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}Hasil Training LSTM Svchosta 4 Directional Header}{63}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}Hasil Training LSTM Neris 4 Directional Header}{66}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}Hasil Training LSTM Rbot 4 Directional Header}{68}{subsubsection.4.2.3.9}
+\contentsline {subsection}{\numberline {4.2.4}Perbandingan Metode LSTM}{70}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Hasil Training Data CNN}{70}{subsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.5.1}Hasil Training CNN Svchosta}{70}{subsubsection.4.2.5.1}
+\contentsline {subsubsection}{\numberline {4.2.5.2}Hasil Training CNN Rbot}{74}{subsubsection.4.2.5.2}
+\contentsline {subsubsection}{\numberline {4.2.5.3}Hasil Training CNN Neris}{78}{subsubsection.4.2.5.3}
+\contentsline {subsubsection}{\numberline {4.2.5.4}Hasil Training CNN Single}{81}{subsubsection.4.2.5.4}
+\contentsline {subsubsection}{\numberline {4.2.5.5}Hasil Training CNN Multiple}{82}{subsubsection.4.2.5.5}
+\contentsline {subsection}{\numberline {4.2.6}Data Hasil Detection Rate}{85}{subsection.4.2.6}
+\contentsline {chapter}{\numberline {5}Penutup}{89}{chapter.5}
+\contentsline {section}{\numberline {5.1}Kesimpulan}{89}{section.5.1}
+\contentsline {section}{\numberline {5.2}Saran}{89}{section.5.2}

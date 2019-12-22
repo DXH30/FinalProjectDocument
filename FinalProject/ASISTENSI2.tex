@@ -1,0 +1,90 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage[a4paper,left=2cm,right=2cm,top=1cm,bottom=3cm]{geometry}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{makecell}
+%\usepackage{booktabs} % Jangan dipakai ngerusak border jadi putus2
+\usepackage{siunitx}
+\setlength{\fboxrule}{0pt}
+\begin{document}
+\pagestyle{empty}
+% Menyesuaikan header
+\begin{tabular}{@{}cc@{}}
+\begin{tabular}{@{}c@{}}
+  \includegraphics[width=2.5cm]{logo.png}
+\end{tabular} &
+\begin{tabular}{@{}c@{}@{}}
+    \tabularnewline[0.5cm]
+    \textbf{JURUSAN TEKNIK ELEKTRO}\\
+    \textbf{FAKULTAS TEKNIK}\\
+    \textbf{UNIVERSITAS MATARAM}\\
+    Jl. Majapahit No. 62 Mataram 83123 Telp. (0370) 636126, ext. 223\\
+    \tabularnewline[0.1cm]
+\end{tabular} 
+\end{tabular}
+
+\noindent\rule{\textwidth}{2pt}
+% Judul bisa diganti jadi lembar asistensi lain
+\begin{center}
+    \textbf{LEMBAR ASISTENSI\\
+    TUGAS AKHIR}\\
+\end{center}
+\begin{tabularx}{\textwidth}{llX}
+Nama & : & Didik Hadumi Setiaji \\
+NIM & : & F1B014020 \\
+Judul & : & Perancangan Preprocessor Pada Sistem Pendeteksi Intrusi Snort Berbasis Convolutional Neural Network dan Long Short Term Memory \\
+\end{tabularx}
+% Konten Lembar Asistensi
+\begin{table}[H]
+    \centering
+    % hsize 1.34 lebih besar 2x dari hsize 0.66
+    % X memungkinkan latex seimbang tabelnya
+    \begin{tabularx}{\textwidth}{
+    | c % tengah 
+    | >{\hsize=0.66\hsize }X % setengah X
+    | >{\hsize=1.34\hsize }X % 2x X
+    | p{2cm} % tengah
+    |}
+    \hline
+    \textbf{No} & \textbf{Hari/Tanggal} & \textbf{Koreksi} & \textbf{Paraf}\\
+    \hline
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     & & & \\
+     \hline
+    \end{tabularx}
+    %\caption{Caption}
+    \label{tab:my_label}
+\end{table}
+    % Tempat tanda tangan
+\begin{tabularx}{\textwidth}{XX}
+& Mataram, \hspace{3cm} 2019 \\
+& Pembimbing Pendamping \\ \\ \\ \\ \\ \\
+& Lalu A. Syamsul Irfan Akbar, ST., M.Eng. \\
+& NIP. 19830310 200912 1 004
+\end{tabularx}
+\end{document}

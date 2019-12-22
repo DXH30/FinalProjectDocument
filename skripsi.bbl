@@ -1,0 +1,71 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Axelsson}{2000}{axelsson2000intrusion}
+Axelsson, S.  \harvardyearleft 2000\harvardyearright , Intrusion detection
+  systems: A survey and taxonomy, Technical report, Technical report.
+
+\harvarditem{Carr}{2007}{carr2007snort}
+Carr, J.  \harvardyearleft 2007\harvardyearright , `Snort: Open source network
+  intrusion prevention', {\em Esecurity Planet, http://www. esecurityplanet.
+  com/prevention/article. php/ 3681296/Snort-Open-Source-Network-
+  Intrusion-Prevention. htm} .
+
+\harvarditem[Gers et~al.]{Gers, Schmidhuber \harvardand\
+  Cummins}{1999}{gers1999learning}
+Gers, F.~A., Schmidhuber, J. \harvardand\ Cummins, F.  \harvardyearleft
+  1999\harvardyearright , `Learning to forget: Continual prediction with lstm'.
+
+\harvarditem[Goodfellow et~al.]{Goodfellow, Bengio \harvardand\
+  Courville}{2016}{goodfellow2016deep}
+Goodfellow, I., Bengio, Y. \harvardand\ Courville, A.  \harvardyearleft
+  2016\harvardyearright , {\em Deep learning}, MIT press.
+
+\harvarditem{Greenemeier}{2006}{greenemeier2006sourcefire}
+Greenemeier, L.  \harvardyearleft 2006\harvardyearright , Sourcefire has big
+  plans for open-source snort, Technical report, Retrieved 2010-06-23.
+
+\harvarditem{Hassoun et~al.}{1995}{hassoun1995fundamentals}
+Hassoun, M.~H. et~al.  \harvardyearleft 1995\harvardyearright , {\em
+  Fundamentals of artificial neural networks}, MIT press.
+
+\harvarditem{Jacobus \harvardand\ Winarko}{2014}{jacobus2014penerapan}
+Jacobus, A. \harvardand\ Winarko, E.  \harvardyearleft 2014\harvardyearright ,
+  `Penerapan metode support vector machine pada sistem deteksi intrusi secara
+  real-time', {\em IJCCS (Indonesian Journal of Computing and Cybernetics
+  Systems)} {\bf 8}(1),~13--24.
+
+\harvarditem[Liao et~al.]{Liao, Lin, Lin \harvardand\
+  Tung}{2013}{liao2013intrusion}
+Liao, H.-J., Lin, C.-H.~R., Lin, Y.-C. \harvardand\ Tung, K.-Y.
+  \harvardyearleft 2013\harvardyearright , `Intrusion detection system: A
+  comprehensive review', {\em Journal of Network and Computer Applications}
+  {\bf 36}(1),~16--24.
+
+\harvarditem{Martellini \harvardand\ Malizia}{2017}{martellini2017cyber}
+Martellini, M. \harvardand\ Malizia, A.  \harvardyearleft 2017\harvardyearright
+  , {\em Cyber and chemical, biological, radiological, nuclear, explosives
+  challenges}, Springer.
+
+\harvarditem{Newman}{2009}{newman2009computer}
+Newman, R.~C.  \harvardyearleft 2009\harvardyearright , {\em Computer security:
+  Protecting digital resources}, Jones \& Bartlett Publishers.
+
+\harvarditem{Stanger}{2011}{stanger2011cheat}
+Stanger, J.  \harvardyearleft 2011\harvardyearright , {\em How to Cheat at
+  Securing Linux}, Elsevier.
+
+\harvarditem{Wirawan \harvardand\ Eksistyanto}{2015}{wirawan2015penerapan}
+Wirawan, I. N.~T. \harvardand\ Eksistyanto, I.  \harvardyearleft
+  2015\harvardyearright , `Penerapan naive bayes pada intrusion detection
+  system dengan diskritisasi variabel', {\em JUTI: Jurnal Ilmiah Teknologi
+  Informasi} {\bf 13}(2),~182--189.
+
+\harvarditem[Zhang et~al.]{Zhang, Li, Manikopoulos, Jorgenson \harvardand\
+  Ucles}{2001}{zhang2001hide}
+Zhang, Z., Li, J., Manikopoulos, C., Jorgenson, J. \harvardand\ Ucles, J.
+  \harvardyearleft 2001\harvardyearright , Hide: a hierarchical network
+  intrusion detection system using statistical preprocessing and neural network
+  classification, {\em in} `Proc. IEEE Workshop on Information Assurance and
+  Security', pp.~85--90.
+
+\end{thebibliography}

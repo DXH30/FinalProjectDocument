@@ -1,10 +1,10 @@
-\documentclass[red]{skripsi}
+\message{ !name(skripsi.tex)}\documentclass[red]{skripsi}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
 \usepackage{blindtext}
 % Mendefinisikan untuk environment tabel hasil keluaran keras
-\sisetup{
+\sisetup{   
         round-mode = places,
         round-precision = 3,
         table-column-width=1.2cm,
@@ -42,6 +42,9 @@
 \tahun{2019}
 
 \begin{document}
+
+\message{ !name(skripsi.tex) !offset(-3) }
+
 \buatcover
 \pagestyle{empty}
 \subfile{PENGESAHAN.tex}
@@ -67,3 +70,4 @@
 \newpage
 \bibliography{skripsi}
 \end{document}
+\message{ !name(skripsi.tex) !offset(-73) }

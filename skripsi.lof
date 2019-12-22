@@ -1,0 +1,45 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Packet Data Unit pada OSI Layer\relax }}{6}{figure.caption.1}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Sistem kerja Snort IDS\relax }}{8}{figure.caption.2}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Model CNN sederhana\relax }}{11}{figure.caption.3}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Max Pooling Layer\relax }}{12}{figure.caption.4}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Layer LSTM\relax }}{13}{figure.caption.5}% 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Forget Gate\relax }}{14}{figure.caption.6}% 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Input Gate\relax }}{15}{figure.caption.7}% 
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Output Gate\relax }}{16}{figure.caption.8}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Metode Penelitian\relax }}{19}{figure.caption.9}% 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Model Rancangan Sistem\relax }}{24}{figure.caption.10}% 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Proses kerja sistem\relax }}{24}{figure.caption.11}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Model CNN\relax }}{28}{figure.caption.12}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Model LSTM\relax }}{29}{figure.caption.13}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Loss dan Akurasi model LSTM svchosta Sentiment Analysis\relax }}{30}{figure.caption.14}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Prediksi model LSTM svchosta Sentiment Analysis\relax }}{31}{figure.caption.15}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Loss dan Akurasi model LSTM neris Sentiment Analysis\relax }}{32}{figure.caption.17}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Prediksi model LSTM neris Sentiment Analysis\relax }}{32}{figure.caption.18}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Loss dan Akurasi model LSTM rbot Sentiment Analysis\relax }}{33}{figure.caption.20}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Prediksi model LSTM rbot Sentiment Analysis\relax }}{34}{figure.caption.21}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Loss dan Akurasi model LSTM svchosta\relax }}{35}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Grafik Prediksi Svchosta\relax }}{36}{figure.caption.24}% 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Loss dan Akurasi model LSTM neris\relax }}{37}{figure.caption.26}% 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Grafik Prediksi Neris\relax }}{38}{figure.caption.27}% 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Loss dan Akurasi model LSTM rbot\relax }}{39}{figure.caption.29}% 
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Grafik Prediksi RBot\relax }}{40}{figure.caption.30}% 
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Loss dan Akurasi model LSTM4 Svchosta\relax }}{41}{figure.caption.32}% 
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Prediksi Port model LSTM4 svchosta\relax }}{42}{figure.caption.34}% 
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Prediksi IP Address model LSTM4 svchosta\relax }}{42}{figure.caption.33}% 
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Loss dan Akurasi model LSTM4 Neris\relax }}{43}{figure.caption.36}% 
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Prediksi IP Address model LSTM4 Neris\relax }}{44}{figure.caption.37}% 
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Prediksi Port model LSTM4 Neris\relax }}{44}{figure.caption.38}% 
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Loss dan Akurasi model LSTM4 Rbot\relax }}{45}{figure.caption.40}% 
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Prediksi IP Address model LSTM 4 rbot\relax }}{45}{figure.caption.41}% 
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Prediksi Port model LSTM4 Rbot\relax }}{46}{figure.caption.42}% 
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Grafik Prediksi Svchosta\relax }}{49}{figure.caption.46}% 
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Grafik Prediksi Rbot\relax }}{52}{figure.caption.49}% 
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Grafik Prediksi Neris\relax }}{55}{figure.caption.52}% 
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Grafik Prediksi Single\relax }}{58}{figure.caption.55}% 
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Grafik Prediksi Multiple\relax }}{61}{figure.caption.58}% 
+\addvspace {10\p@ }

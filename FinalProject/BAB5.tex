@@ -1,0 +1,15 @@
+\documentclass[./skripsi.tex]{subfiles}
+\begin{document}
+\chapter{Penutup}
+\section{Kesimpulan}
+\begin{enumerate}
+    \item Hasil yang diperoleh pada metode LSTM untuk proses profiling trafik yang terbaik diperoleh dengan menggunakan metode 4 directional header, dapat dilihat dari konvergensi dan ketepatan prediksi data dengan input data.
+    \item Hasil yang diperoleh pada metode CNN untuk proses filtering payload memiliki pola semakin tinggi learning rate yang digunakan maka konvergensi atau peningkatan akurasi dan pengurangan loss terjadi lebih cepat beberapa epoch dari learning rate yang rendah.
+    \item Hasil detection rate memiliki pola paling jelas terlihat pada bagian CNN, dimana semakin besar ukuran paket maka semakin lama pula proses pendeteksian terjadi. Kecepatan pendeteksian total diperoleh fluktuatif.
+\end{enumerate}
+\section{Saran}
+\begin{enumerate}
+    \item Agar integrasi Sistem Pendeteksi Intrusi Snort dan Keras framework dapat dioptimasi sehingga pendeteksian dapat terjadi dengan cepat atau mendekati realtime. Penelitian sebaiknya dilakukan dengan hardware yang memiliki daya komputasi yang kuat.
+    \item Agar mekanisme Sistem Pendeteksi Intrusi dapat diterapkan secara portabel, perlu adanya sistem yang dapat mengkonversi dari satu model dengan backend lain selain keras.
+\end{enumerate}
+\end{document}

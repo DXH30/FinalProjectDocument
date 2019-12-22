@@ -1,0 +1,23 @@
+\documentclass{beamer}
+\usepackage[compatibility=false]{caption}
+\usepackage{subcaption}
+
+\begin{document}
+\begin{frame}
+\begin{figure}
+    \begin{subfigure}[b]{.45\linewidth}
+        \centering
+        \caption{First subfigure}
+        \label{fig:a}
+        \textcolor{blue}{\rule{3cm}{3cm}}
+    \end{subfigure}
+    \begin{subfigure}[b]{.45\linewidth}
+        \centering
+        \caption{Second subfigure}
+        \label{fig:b}
+        \textcolor{blue}{\rule{3cm}{3cm}}
+    \end{subfigure}
+\caption{A figure}\label{fig:1}
+\end{figure}
+\end{frame}
+\end{document}

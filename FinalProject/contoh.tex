@@ -1,0 +1,249 @@
+\documentclass[a4paper,12pt]{book}
+%==============================================================================================
+% Bagian deklarasi paket-paket LaTeX yang dibutuhkan
+%==============================================================================================
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage[indonesian]{babel}
+
+\title{Skripsi}
+\usepackage{ctable}
+\usepackage{fancyhdr}
+
+\usepackage{floatflt}
+\usepackage{listings}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{eurosym}
+\usepackage{colortbl}
+\usepackage{paralist}
+\usepackage{fancybox}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage[top=4cm, left=4cm, right=2.5cm, bottom=3.5cm]{geometry} % silakan disesuaikan dengan aturan margin buku skripsi yang diberikan oleh universitas Anda.
+
+%==============================================================================================
+% Bagian deklarasi tampilan caption pada gambar atau tabel
+%==============================================================================================
+\DeclareCaptionStyle{italic}
+{labelfont={rm,bf},textfont={rm},indention=18pt,labelsep=period,justification=centering}
+\captionsetup[figure]{style=italic}
+\captionsetup{style=default,labelfont={rm,bf}, format=hang}
+%==============================================================================================
+% Bagian input data untuk keterangan file PDF yang dihasilkan
+%==============================================================================================
+\pdfinfo{
+/Author ( ) % silakan diisi dengan nama pembuat skripsi
+/CreationDate (D:20060311110000) % D:YYYYMMDDhhmmss (diisi dengan tanggal pembuatan skripsi)
+/ModDate (D:20060311110000) % diisi dengan tanggal modifikasi skripsi
+/Creator (LaTeX) 
+/Producer (pdfLaTeX)
+/Title ( ) % diisi dengan nama file skripsi
+/Subject ( ) % diisi dengan judul skripsi
+/Keywords ( ) % diisi dengan kata-kata kunci isi skripsi
+}
+%==============================================================================================
+% Bagian pengaturan hyperref
+%==============================================================================================
+\hypersetup{
+pdftitle={ }, % diisi dengan judul akhir skripsi
+pdfauthor={ }, % diisi dengan nama penulis skripsi
+pdfkeywords={ }, % diisi dengan kata-kata kunci dari isi skripsi
+bookmarksnumbered,
+pdfstartview={FitH},
+urlcolor=cyan, % warna URL yang ditampilkan, boleh diganti selain CYAN.
+}
+
+%==============================================================================================
+% Koleksi pemenggalan kata, isi bagian ini bisa ditambah jika Anda mendapati kata yang salah pemenggalannya
+%==============================================================================================
+\hyphenation{deng-an}
+\hyphenation{lang-uage}
+
+\hyphenation{kon-fi-gu-ra-si}
+\hyphenation{me-nang-an-i}
+\hyphenation{ter-se-but}
+\hyphenation{kom-pu-ter}
+\hyphenation{ber-sa-ma-an}
+\hyphenation{di-mi-liki}
+\hyphenation{pa-sien}
+\hyphenation{bia-sa-nya}
+%==============================================================================================
+% Bagian pengaturan paragraf
+%==============================================================================================
+\setlength{\parindent}{0in} % jika awal paragraf ingin dibuat menjorok ke dalam, ganti angka 0 nya.
+\newcommand{\marginal}[1]{\leavevmode\marginpar{\color{cyan}\footnotesize\raggedright#1\par}}
+%==============================================================================================
+% BAGIAN ISI DOKUMEN
+%==============================================================================================
+\begin{document}  
+%==============================================================================================
+% Bagian pembuatan halaman judul
+%==============================================================================================
+\pagestyle{empty}
+     
+    \begin{titlepage}
+      \begin{center}
+      {\Large\textbf{    }}\\ % diisi dengan judul skripsi
+      \par
+      \vspace{3cm}
+     
+      \textbf{\large SKRIPSI}
+      \end{center}
+        \vspace{1cm}
+      \hspace{6,8cm}oleh :\\
+      \hspace{5,5cm} Nama Penulis \\ % ganti Nama Penulis dengan nama Anda sendiri
+      \hspace{4,3cm}  NIM / Jurusan % ganti NIM dan Jurusan dengan nomor induk mahasiswa dan jurusan tempat Anda kuliah
+     
+      \begin{center}
+      \par   
+      \vfill 
+        \begin{figure}[h]
+          \hspace{6cm} 
+          \includegraphics[width=2cm]{strate} % isi dengan nama file logo Universitas Anda
+        \end{figure}
+        \vspace*{3cm}
+      {\bf \large NAMA PROGRAM STUDI}\\ % isi dengan program studi yang Anda ikuti
+      {\bf \large NAMA FAKULTAS}\\ % isi dengan nama fakultas tempat Anda kuliah
+      {\bf \large NAMA UNIVERSITAS}\\ % isi dengan nama universitas tempat Anda kuliah
+      {\bf  \large 2006 } % sesuaikan tahun dengan tahun kelulusan
+      \end{center}
+\end{titlepage}
+
+%==============================================================================================
+% Bagian pembuatan halaman pengesahan skripsi
+%==============================================================================================
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Halaman Pengesahan}
+\begin{center}{%\fontfamily{phv}\selectfont
+%\vspace*{0.5cm}
+\textbf{\large HALAMAN PENGESAHAN\\[1.3cm]
+  {\normalsize \textbf{JUDUL SKRIPSI}}}\\[1.5cm]
+
+  \textbf{\large LAPORAN SKRIPSI}
+     
+      \par
+      \vspace{0.8cm}
+      {oleh :
+      \\
+      \large \textbf{NAMA PENULIS}\\
+      NIM / Nama Jurusan
+     
+      }
+\vspace{1.5cm}
+Telah disetujui dan disahkan untuk persyaratan memperoleh gelar\\[0.2cm]
+SARJANA\\[0.2cm]
+pada\\[0.2cm]
+Nama Program Studi\\[0.2cm]
+Nama Jurusan\\[0.2cm]
+Nama Universitas\\[2cm]
+Bandung, Juni 2006\\[0.2cm] % sesuaikan tempat dan tanggal kelulusan
+Telah diperiksa, disetujui, dan disahkan oleh :\\
+Pembimbing I\\[2.3cm]
+\textbf{\bfseries \underline{Nama Pembimbing}}\\[0.2cm]
+NIP Pembimbing\\
+
+}\end{center}
+%==============================================================================================
+% Bagian pengaturan header dan footer
+%==============================================================================================
+\pagestyle{fancy}\fancyhead{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyfoot[R]{\bfseries\thepage}
+\fancyfoot[L]{\bfseries Buku Skripsi}
+\fancyhead[R]{\bfseries \rightmark}
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\headrule}{{\color{black}%
+\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}}
+\renewcommand{\footrulewidth}{1pt}\addtolength{\headheight}{13.6pt}
+\fancypagestyle{plain}{
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+}
+%==============================================================================================
+% ISI SKRIPSI
+%==============================================================================================
+\pagenumbering{roman}
+\setcounter{tocdepth}{4}
+%==============================================================================================
+% AWAL KATA PENGANTAR
+%==============================================================================================
+\chapter*{KATA PENGANTAR}\addcontentsline{toc}{chapter}{Kata Pengantar}
+
+% isi kata pengantar
+% isi kata pengantar
+% isi kata pengantar
+% isi kata pengantar
+\vspace*{2cm}
+\begin{flushright}
+Bandung, Juni 2006\\ % sesuaikan dengan tempat dan tanggal penulisan skripsi
+Penulis,\hspace{0.8cm}
+\vspace*{1.5cm}
+Nama Penulis % ganti dengan nama pembuat skripsi
+\end{flushright}
+%==============================================================================================
+% AKHIR KATA PENGANTAR
+%==============================================================================================
+\tableofcontents  %perintah untuk menampilkan daftar isi
+\addcontentsline{toc}{chapter}{Daftar Isi}
+\listoftables %perintah untuk menampilkan daftar tabel
+\addcontentsline{toc}{chapter}{Daftar Tabel}
+\listoffigures %perintah untuk menampilkan daftar gambar
+\addcontentsline{toc}{chapter}{Daftar Gambar}
+%==============================================================================================
+% MULAI BAB I
+%==============================================================================================
+\chapter{PENDAHULUAN} %JUDUL BAB
+\label{pendahuluan}
+\pagenumbering{arabic}
+
+%==============================================================================================
+% Subbab latar belakang
+%==============================================================================================
+\section{Latar Belakang} %Judul subbab
+\label{latarbelakang} 
+%isi subbab latar belakang
+    \subsection{judul sub subbab}
+      %isi sub subbab
+      %isi sub subbab
+      %isi sub subbab
+     
+%isi subbab latar belakang
+%isi subbab latar belakang
+% ISI DARI BAB I INI DAPAT DIKEMBANGKAN TERUS DAN DILANJUTKAN DENGAN BAB-BAB BERIKUTNYA DENGAN
+FORMAT YANG SAMA,
+% UNTUK MENGHEMAT TEMPAT DALAM CONTOH INI, HANYA DITUNJUKKAN 1 BAB SAJA SEBAGAI CONTOH
+%==============================================================================================
+% AKHIR BAB I
+%==============================================================================================
+%==============================================================================================
+% Bagian daftar isi
+%==============================================================================================
+\bibliographystyle{ieeetr}
+\bibliography{daftarpustaka}%memasukkan file BibTeX dengan nama "daftarpustaka" yang berisi
+kumpulan referensi
+\addcontentsline{toc}{chapter}{Daftar Pustaka}
+
+%==============================================================================================
+% MULAI BAB LAMPIRAN
+%==============================================================================================
+\appendix % dengan menggunakan appendix nomor bab akan ditampilan dengan menggunakan huruf;
+menjadi Lampiran A
+
+\chapter{Data Pendukung} % contoh ini akan menampilkan bab baru yaitu Lampiran A - Data
+Pendukung
+%==============================================================================================
+% AKHIR DOKUMEN
+%==============================================================================================
+\newpage
+\pagestyle{empty}
+\vspace*{7cm}
+\centering
+\resizebox{7cm}{1cm}{\textrm{\textbf{SELESAI}}}
+  \par   
+      \vfill 
+     
+\end{document}
